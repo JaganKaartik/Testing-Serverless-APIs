@@ -1,5 +1,6 @@
 const app = require("express")();
 const { v4 } = require("uuid");
+const data = require("../db/data");
 
 app.get("/api", (req, res) => {
   const path = `/api/item/${v4()}`;
@@ -11,6 +12,10 @@ app.get("/api", (req, res) => {
 app.get("/api/item/:slug", (req, res) => {
   const { slug } = req.params;
   res.end(`Item: ${slug}`);
+});
+
+app.get("/api/spacex/all", (req, res) => {
+  res.json(data);
 });
 
 module.exports = app;
