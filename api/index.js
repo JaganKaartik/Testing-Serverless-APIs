@@ -18,4 +18,11 @@ app.get("/api/spacex/all", (req, res) => {
   res.json(data);
 });
 
+app.get("/api/spacex/:flightNumber", (req, res) => {
+  const filteredResults = data.filter(
+    ({ flight_number }) => flight_number === req.params.flightNumber
+  );
+  res.json(filteredResults);
+});
+
 module.exports = app;
