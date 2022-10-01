@@ -1,8 +1,8 @@
 const app = require("express")();
-const diet = require("../db/diet");
+const food = require("../db/food");
 
-app.get("/diet/all", (_, res) => {
-  res.json(diet);
+app.get("/diet/all", (req, res) => {
+  res.json(food);
 });
 
 module.exports = app;
