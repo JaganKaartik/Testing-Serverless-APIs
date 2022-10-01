@@ -35,4 +35,13 @@ module.exports = [
     launch_site: { site_name: "Kwajalein Atoll" },
     cost: 1000,
   },
+  {
+    flight_number: 5,
+    mission_name: "RazakSat",
+    status: "failed",
+    launch_year: "2009",
+    rocket: { rocket_id: "falcon1", orbit: "LEO" },
+    launch_site: { site_name: "Kwajalein Atoll" },
+    cost: 2000,
+  },
 ];
