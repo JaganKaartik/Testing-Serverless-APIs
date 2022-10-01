@@ -1,0 +1,13 @@
+{
+  "name": "testing-serverless-apis",
+  "version": "1.0.0",
+  "description": "Testing Serverless APIs",
+  "main": "index.js",
+  "repository": "https://github.com/JaganKaartik/Testing-Serverless-APIs",
+  "author": "Jagan Kaartik <kaartikjagan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "uuid": "^9.0.0"
+  }
+}
